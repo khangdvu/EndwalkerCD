@@ -11,10 +11,10 @@ function setCountdown(){
     let currentDate = new Date();
     let cdTime = releaseDate.getTime() - currentDate.getTime();
     if(cdTime > 0){
-        let cdDay = Math.round(cdTime/1000/60/60/24) - 1;
-        let cdHour = Math.round((cdTime/1000/60/60) % 24) - 1;
-        let cdMinute = Math.round((cdTime/1000/60) % 60);
-        let cdSecond = Math.round((cdTime/1000) % 60);
+        let cdDay = Math.floor(cdTime/1000/60/60/24);
+        let cdHour = Math.floor(cdTime/1000/60/60 % 24) - 1 ;
+        let cdMinute = Math.floor((cdTime/1000/60) % 60);
+        let cdSecond = Math.floor((cdTime/1000) % 60);
     
         digits_day.innerHTML = cdDay;
         digits_hour.innerHTML = cdHour;
