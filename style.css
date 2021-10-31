@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(160,0%,8%);
+    overflow: hidden;
+
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+#container--digits{
+
+    padding-top: 10vh;
+    height: 20vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+}
+.bg--image{
+    margin: 0;
+    padding: 0;
+    z-index: -100;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image: url('ffxiv.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.digits{
+    padding-left: 6vw;
+    padding-right: 6vw;
+    color: rgb(250,192,141);
+    font-size: 2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    text-shadow: 3px 2px black;
+}
+
+.digits--big{
+    font-size: 3rem;
+}
+
+#text--info{
+    padding-left: 6vw;
+    padding-right: 6vw;
+    color: rgb(250,192,141);;
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    text-shadow: 3px 2px black;
+}
