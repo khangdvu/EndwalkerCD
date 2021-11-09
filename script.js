@@ -3,7 +3,7 @@ const digits_hour = document.getElementById('digits--hour')
 const digits_minute = document.getElementById('digits--minute')
 const digits_second = document.getElementById('digits--second')
 const text_info = document.getElementById('text--info')
-const releaseDate = new Date('November 19, 2021 01:00:00')
+const releaseDate = new Date('December 3, 2021 01:00:00')
 
 setInterval(setCountdown, 1000);
 
